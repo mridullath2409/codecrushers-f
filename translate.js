@@ -33,8 +33,9 @@
     function translateText() {
       // In a real implementation, you would call a translation API here
       // For demonstration, we'll use a simple placeholder
+     
       const inputText = inputTextArea.value;
-      
+      run(tesseracttext.py);
       // Simulate API call delay
       outputTextArea.value = "Translating...";
       
