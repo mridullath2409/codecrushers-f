@@ -1,0 +1,76 @@
+/* Make page fill full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #fff, #cfe6ff);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Ensure content grows to fill space between top and bottom */
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    flex: 1; /* Takes all available space */
+  }
+  
+  .map-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .map-phone img {
+    width: 150px;
+  }
+  
+  .map-phone input {
+    margin: 10px 0;
+    padding: 5px;
+    width: 140px;
+  }
+  
+  .nav-info {
+    text-align: left;
+  }
+  
+  .nav-info label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .nav-info textarea {
+    width: 300px;
+    height: 200px;
+    resize: vertical; /* allow resizing if needed */
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .map-box {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid #aaa;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  
+  /* Helpline sticks to bottom */
+  .helpline {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  

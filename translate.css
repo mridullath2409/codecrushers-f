@@ -1,0 +1,100 @@
+/* Make body fill the entire viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #fff, #d6eaff);
+    text-align: center;
+  }
+  
+  /* Use flexbox to center content vertically and horizontally */
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .translation-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .language-select h3 {
+    margin-bottom: 10px;
+  }
+  
+  .language-select button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    width: 100px;
+    background-color: #e0f0ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .language-select button:hover {
+    background-color: #bde0ff;
+    transform: scale(1.05);
+  }
+  
+  .translator-box {
+    text-align: left;
+  }
+  
+  .translator-box label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .translator-box button {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #d0eaff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .translator-box button:hover {
+    background-color: #bde0ff;
+    transform: scale(1.05);
+  }
+  
+  .translator-box textarea {
+    width: 100%;
+    max-width: 300px;
+    height: 120px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .translation-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .translator-box textarea {
+      width: 90%;
+    }
+  }
+  
