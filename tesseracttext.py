@@ -22,7 +22,7 @@ def preprocess_image(image_path):
     return thresh
 
 # Load and preprocess image
-image_path = r'C:\Mrinal\TestImages\esss.jpg'  # Update if necessary
+image_path = r'C:\Mrinal\TestImages\test.jpg'  # Update if necessary
 processed_image = preprocess_image(image_path)
 
 if processed_image is not None:
