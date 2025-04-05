@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Translation Aid - Translate content across multiple languages" />
+  <title>Translation Aid - Start Translating</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="translate.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="Translation Aid Logo" />
+        </a>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guide.html">Guide</a></li>
+          <li><a href="translate.html" class="active">Translate</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="translate-hero">
+      <div class="container">
+        <h1>Start <span>Translating</span></h1>
+        <div class="divider"></div>
+        <p>Select your preferred language and start breaking language barriers.</p>
+      </div>
+    </section>
+    
+    <section class="translation-section">
+      <div class="container">
+        <div class="translation-container">
+          <div class="language-select">
+            <h3>Preferred Language</h3>
+            <div class="language-buttons">
+              <button class="btn language-btn">हिंदी<br>Hindi</button>
+              <button class="btn language-btn">తెలుగు<br>Telugu</button>
+              <button class="btn language-btn">मराठी<br>Marathi</button>
+              <button class="btn language-btn">More Languages +</button>
+            </div>
+          </div>
+          
+          <div class="translator-box">
+            <div class="input-section">
+              <h3>Input</h3>
+              <textarea placeholder="Enter text to translate..."></textarea>
+              <div class="input-actions">
+                <button class="btn btn-secondary" onclick="openCamera()">
+                  <svg class="camera-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <circle cx="12" cy="13" r="4"></circle>
+                  </svg>
+                  Open Camera
+                </button>
+                <button class="btn btn-secondary">
+                  <svg class="upload-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                  Upload Image
+                </button>
+              </div>
+            </div>
+            
+            <div class="output-section">
+              <h3>Output</h3>
+              <textarea placeholder="Translated text will appear here..." readonly></textarea>
+              <div class="output-actions">
+                <button class="btn btn-primary">
+                  <svg class="copy-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  Copy Text
+                </button>
+                <button class="btn btn-primary">
+                  <svg class="speak-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  </svg>
+                  Speak
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="cta">
+      <div class="container">
+        <h2>Need Help with Translation?</h2>
+        <p>Check our comprehensive guide for tips and tricks on effective translation.</p>
+        <a href="guide.html" class="btn btn-secondary">View Translation Guide</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="logo.png" alt="Translation Aid Logo" width="40" />
+          <p>Translation Aid</p>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Translation Aid. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="translate.js"></script>
+</body>
+</html>

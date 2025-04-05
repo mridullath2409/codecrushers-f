@@ -1,0 +1,134 @@
+/* Translate Page Specific Styles */
+.translate-hero {
+  background-color: #f8f9fa;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.translate-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.translate-hero h1 span {
+  color: #4a6bdf;
+}
+
+.translate-hero .divider {
+  height: 4px;
+  width: 60px;
+  background-color: #4a6bdf;
+  margin: 0 auto 1.5rem;
+}
+
+.translation-section {
+  padding: 3rem 0;
+}
+
+.translation-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.language-select {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.language-select h3 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.language-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.language-btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #4a6bdf;
+  background-color: white;
+  color: #4a6bdf;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  min-width: 120px;
+}
+
+.language-btn:hover {
+  background-color: #4a6bdf;
+  color: white;
+}
+
+.translator-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-section, .output-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-section h3, .output-section h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.translator-box textarea {
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  resize: none;
+  font-size: 1rem;
+}
+
+.input-actions, .output-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-actions button, .output-actions button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+}
+
+.camera-icon, .upload-icon, .copy-icon, .speak-icon {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .translator-box {
+    grid-template-columns: 1fr;
+  }
+  
+  .language-buttons {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Navigation guide for Translation Aid - Get directions in any language">
+  <title>Navigation Guide | Translation Aid</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="navigation.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="Translation Aid Logo" />
+        </a>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guide.html" class="active">Guide</a></li>
+          <li><a href="translate.html">Translate</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Navigation Guide</h1>
+        <p>Get directions in your preferred language, anywhere you go</p>
+      </div>
+    </section>
+
+    <section class="navigation-section">
+      <div class="container">
+        <div class="nav-container">
+          <div class="location-card">
+            <div class="card-header">
+              <h2>Where do you want to go?</h2>
+              <p>Enter your locations below to get translated directions</p>
+            </div>
+            <div class="map-preview">
+              
+            </div>
+            <div class="location-inputs">
+              <div class="input-group">
+                <svg class="input-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
+                <input type="text" id="from-location" placeholder="Starting location" aria-label="Starting location">
+              </div>
+              <div class="input-group">
+                <svg class="input-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/></svg>
+                <input type="text" id="to-location" placeholder="Destination" aria-label="Destination">
+              </div>
+              <button id="get-directions" class="btn btn-primary">Get Directions</button>
+            </div>
+          </div>
+
+          <div class="directions-card">
+            <div class="card-header">
+              <h2>Directions</h2>
+              <div class="language-selector">
+                <label for="language-select">Translate to:</label>
+                <select id="language-select">
+                  <option value="en">English</option>
+                  <option value="es">Spanish</option>
+                  <option value="fr">French</option>
+                  <option value="de">German</option>
+                  <option value="zh">Chinese</option>
+                  <option value="ja">Japanese</option>
+                  <option value="ko">Korean</option>
+                  <option value="hi">Hindi</option>
+                </select>
+              </div>
+            </div>
+            <div class="directions-content">
+              <div class="steps-container">
+                <h3>Steps to reach destination</h3>
+                <div class="steps-list" id="directions-steps">
+                  <p class="empty-state">Steps to get to destination</p>
+                </div>
+              </div>
+              <div class="map-container">
+                <h3>Route Map</h3>
+                <div id="map" class="map-box">
+                  <!-- Map will be displayed here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="help-section">
+      <div class="container">
+        <div class="help-card">
+          <div class="help-content">
+            <h2>Need assistance?</h2>
+            <p>Our team is available 24/7 to help you with directions or translation issues.</p>
+            <a href="tel:+919810387750" class="helpline-button">
+              <svg class="phone-icon" viewBox="0 0 24 24"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z" fill="currentColor"/></svg>
+              Call Helpline: +91 98103 87750
+            </a>
+          </div>
+          <div class="help-image">
+            <img src="customer.png" alt="Customer support representative">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="logo.png" alt="Translation Aid Logo" width="40" />
+          <p>Translation Aid</p>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Translation Aid. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="navigation.js"></script>
+</body>
+</html>

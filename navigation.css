@@ -1,0 +1,365 @@
+/* Navigation specific styles - to be used alongside main styles.css */
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--white) 100%);
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+  
+  .page-header h1 {
+    font-size: 3.6rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+  }
+  
+  .page-header p {
+    font-size: 1.8rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    color: var(--secondary);
+  }
+  
+  /* Navigation Section */
+  .navigation-section {
+    padding: 6rem 0;
+  }
+  
+  .nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+  }
+  
+  /* Location Card */
+  .location-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .card-header {
+    text-align: center;
+  }
+  
+  .card-header h2 {
+    font-size: 2.4rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  .card-header p {
+    color: var(--secondary);
+    margin-bottom: 0;
+  }
+  
+  .map-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background: var(--light);
+    border-radius: var(--border-radius);
+  }
+  
+  .map-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: calc(var(--border-radius) - 4px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .location-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .input-group {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    color: var(--primary);
+  }
+  
+  .location-inputs input {
+    width: 100%;
+    padding: 1.4rem 1.5rem 1.4rem 4.5rem;
+    border: 1px solid var(--primary-light);
+    border-radius: var(--border-radius);
+    font-size: 1.6rem;
+    transition: var(--transition);
+  }
+  
+  .location-inputs input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(74, 111, 165, 0.2);
+  }
+  
+  .location-inputs input::placeholder {
+    color: #aab7c4;
+  }
+  
+  .location-inputs button {
+    margin-top: 1rem;
+  }
+  
+  /* Directions Card */
+  .directions-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  
+  .directions-card .card-header {
+    padding: 2rem 3rem;
+    background: var(--primary-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .directions-card .card-header h2 {
+    margin-bottom: 0;
+  }
+  
+  .language-selector {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .language-selector label {
+    font-weight: 500;
+    color: var(--primary-dark);
+  }
+  
+  .language-selector select {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid var(--primary-light);
+    border-radius: var(--border-radius);
+    background: var(--white);
+    font-size: 1.4rem;
+    color: var(--dark);
+    cursor: pointer;
+  }
+  
+  .directions-content {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  
+  .steps-container, .map-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .steps-container h3, .map-container h3 {
+    font-size: 2rem;
+    color: var(--primary-dark);
+    margin-bottom: 0;
+  }
+  
+  .steps-list {
+    background: var(--light);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    min-height: 30rem;
+    max-height: 40rem;
+    overflow-y: auto;
+  }
+  
+  .empty-state {
+    color: var(--secondary);
+    text-align: center;
+    margin-top: 12rem;
+  }
+  
+  .direction-step {
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .direction-step:last-child {
+    margin-bottom: 0;
+  }
+  
+  .step-number {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+  }
+  
+  .step-instruction {
+    padding-left: 4rem;
+  }
+  
+  .map-box {
+    background: var(--light);
+    border-radius: var(--border-radius);
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .map-box::after {
+    content: 'Map will be displayed here';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--secondary);
+    font-size: 1.6rem;
+  }
+  
+  /* Help Section */
+  .help-section {
+    padding: 6rem 0;
+    background: var(--light);
+  }
+  
+  .help-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+  }
+  
+  .help-content {
+    flex: 1;
+  }
+  
+  .help-content h2 {
+    font-size: 2.8rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+  }
+  
+  .help-content p {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    max-width: 45rem;
+  }
+  
+  .helpline-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--primary);
+    color: var(--white);
+    padding: 1.2rem 2.4rem;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: var(--transition);
+  }
+  
+  .helpline-button:hover {
+    background: var(--primary-dark);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+  
+  .phone-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .help-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .help-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    .nav-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .directions-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .help-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .help-content p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .directions-card .card-header {
+      flex-direction: column;
+      gap: 1.5rem;
+      text-align: center;
+    }
+  
+    .map-box {
+      height: 25rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .location-card,
+    .directions-card .card-header,
+    .directions-content,
+    .help-card {
+      padding: 2rem;
+    }
+  
+    .page-header {
+      padding: 4rem 0 3rem;
+    }
+  
+    .navigation-section,
+    .help-section {
+      padding: 4rem 0;
+    }
+  }
+  
